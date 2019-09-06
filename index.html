@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="./js/libs/vue-2.6.10.min.js" ></script>
+		<script type="text/javascript" src="./js/libs/vue-i18n-8.14.0.min.js" ></script>
+	</head>
+	<body>
+		<div id="nav">
+			<button id="change_language" v-on:click="change_language">{{ $t("nav.change_language") }}</button>
+			<ol>
+				<li>{{ $t("nav.department_software") }}</li>
+				<li>{{ $t("nav.department_computer_technology") }}</li>
+			</ol>
+		</div>
+		<footer id="foot">{{ $t("foot.copyright") }}</footer>
+	</body>
+	<!-- 导入js 注意tpye -->
+	<script type="module" src="./js/globalization.js" ></script>
+</html>
